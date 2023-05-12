@@ -48,9 +48,9 @@ function helperFun(){
       return(
           <div id="main">
              {/* Do not remove the main div */}
-             <input data-testid="input1" type="text" placeholder="Enter first name" onChange={(e)=>setFirstName(e.target.value)} value={firstName}/>
+             <input name="name1" data-testid="input1" type="text" placeholder="Enter first name" onChange={(e)=>setFirstName(e.target.value)} value={firstName}/>
 
-             <input data-testid="input2" type="text" placeholder="Enter second name" onChange={(e)=>setSecondName(e.target.value)} value={secondName}/>
+             <input name="name2" data-testid="input2" type="text" placeholder="Enter second name" onChange={(e)=>setSecondName(e.target.value)} value={secondName}/>
 
               <button data-testid="calculate_relationship" onClick={helperFun}>Calculate Relationship Future</button>
 
