@@ -13,8 +13,8 @@ function helperFun(){
     if(firstName.length==0 || secondName.length==0){
         setAns("Please Enter valid input")
     }else{
-        let str1=firstName.toLowerCase()
-        let str2=secondName.toLowerCase()
+        let str1=firstName
+        let str2=secondName
         for (let i = 0; i < str1.length; i++) {
             for (let j = 0; j < str2.length; j++) {
                 if(str1.charAt(i) == str2.charAt(j)){
@@ -25,7 +25,7 @@ function helperFun(){
             }
             
         }
-        if(((str1.length+str2.length)%6)%6 == 1){
+        if(((str1.length+str2.length))%6 == 1){
             setAns("Friends")
         }else if((str1.length+str2.length)%6 == 2){
             setAns("Love")
